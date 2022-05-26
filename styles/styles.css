@@ -141,16 +141,32 @@ ul{
 
 
 }
+
+/*     section     */
+
+.section{
+    padding-top: 94px;
+}
    /* Особенности */
 .del{
     display: none;
 }
+.peculiarities{
+    padding-top: 94px;
+}
 .peculiarities-list{
-    margin-top: 94px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+.peculiarities .item{
+    width: calc((100%-90px)/4);
+    margin-right: 30px;
+}   
+.peculiarities .item:nth-child(4n){
+    margin-right: 0px;
 }
 .peculiarities-list h3{
+
     color: var(--titles-font-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -158,13 +174,30 @@ ul{
     line-height: 1.14;
 }
 .peculiarities-list p{
+    margin-top: 10px;
+
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
     /* чем мы занимаемся */
-.doing .conteiner{
-    margin-top: 94px;
+.doing{
+    padding-bottom: 94px;
+}
+.doing-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+.doing-list .item{
+    width: calc((100%-60px)/3);
+    margin-right: 30px;
+    
+}
+.doing-list .item:nth-child(3){
+    margin-right: 0px;
 }
 .doing-title{
     color: var(--titles-font-color);
@@ -174,12 +207,11 @@ ul{
     text-align: center;
 }
     /* наша команда */
-.section-our-team .conteiner{
-    margin-top: 94px;
-}
-.section-our-team{
-    background-color: var(--team-bcg-color ) ;
 
+
+.our-team{
+    background-color: var(--team-bcg-color);
+    padding-bottom: 94px;
 }
 .our-team-title{
     color: var(--titles-font-color);
@@ -187,6 +219,26 @@ ul{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+.our-team-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.our-team-list .item{
+    width: calc((100%-90px)/4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+
+    border-bottom: 1px solid #2F303A;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-list .item:nth-child(4){
+    margin-right: 0px;
 }
 .our-team-list h3{
     color: var(--titles-font-color);
@@ -337,5 +389,3 @@ ul{
 
 
     /* bcg test */
-
-   
