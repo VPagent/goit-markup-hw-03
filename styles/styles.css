@@ -21,6 +21,7 @@ ul{
 
 /* logo */
 .logo{
+    display: inline-block;
     color: var(--hover-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -35,30 +36,65 @@ ul{
 .footer-logo{
     color:#ffffff;
 }
+
+
 /* навигация */
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+.nav-list{
+    display: flex;
+    margin-left: 93px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+.nav-list .item + .item{
+    margin-left: 50px;
+}
 
 .nav-list .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--titles-font-color);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
 
     text-decoration: none;
 }
-.nav-list .link:hover{
+.nav-list .current{
     color: var(--hover-color);
 }
-.nav-list .link:focus{
+.nav-list .link:hover, .nav-list .link:focus{
     color: var(--hover-color);
+}
+
+
+
+.nav-contacts{
+    display: flex;
+    margin-left: auto;
+}
+.nav-contacts .item + .item{
+    margin-left: 50px;
 }
 .nav-contacts .link{
+    display: block;
+
     color:var(--domination-font-color);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
 
     text-decoration: none;
 }
+
+
 .nav-contacts .link:hover{
     color: var(--hover-color);
 }
@@ -71,15 +107,25 @@ ul{
 .hero{
     background-color:var(--footer-bcg-color);
     color: #ffffff;
+    text-align: center;
 }
 .hero-title{
+    padding-top: 200px;
+
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 }
 .hero.button{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    
+
     background-color: var(--hover-color);
     color: #ffffff;
     font-family: inherit;
@@ -92,10 +138,17 @@ ul{
     cursor: pointer;
     border-color: var(--hover-color) ;
     border-radius: 3%;
+
+
 }
    /* Особенности */
 .del{
     display: none;
+}
+.peculiarities-list{
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .peculiarities-list h3{
     color: var(--titles-font-color);
@@ -110,6 +163,9 @@ ul{
     line-height: 1.7;
 }
     /* чем мы занимаемся */
+.doing .conteiner{
+    margin-top: 94px;
+}
 .doing-title{
     color: var(--titles-font-color);
     font-weight: 700;
@@ -118,9 +174,12 @@ ul{
     text-align: center;
 }
     /* наша команда */
-
+.section-our-team .conteiner{
+    margin-top: 94px;
+}
 .section-our-team{
     background-color: var(--team-bcg-color ) ;
+
 }
 .our-team-title{
     color: var(--titles-font-color);
@@ -134,12 +193,17 @@ ul{
     font-weight: 500; 
     font-size: 16px;
     line-height: 1.2;
-}
+} 
 .our-team-list p{
-    font-size: 14px;
-    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
 }
    /* footer */
+.footer-styles .conteiner{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-styles{
     background-color: var(--footer-bcg-color);
 }
@@ -200,6 +264,9 @@ ul{
     
 
     /* Services */
+    .services .conteiner{
+        margin-top: 94px;
+    }
     .services h2{
         color: var(--titles-font-color);
         font-weight: 700;
@@ -215,7 +282,60 @@ ul{
         font-size: 16px;
         line-height: 1.8;
     }
+    .servces-list{
+        margin-top: 34px;
+    }
+    
+
+    /*   conteiner */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteiner{
+        outline: 2px solid black;
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+
+    button{
+        display: inline-block;
+    }
+
+    /* link */
+    .link{
+        display: inline-block;
+    }
+
+
+    /* header conteiner */
+
+
+
     
 
 
-    
+
+
+
+
+
+
+
+
+    /* bcg test */
+
+   
