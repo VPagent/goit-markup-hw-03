@@ -108,25 +108,27 @@ ul{
 
     /* герой  */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color:var(--footer-bcg-color);
     color: #ffffff;
     text-align: center;
 }
 .hero-title{
-    padding-top: 200px;
-
+    
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    font-weight: 900;
     
 }
-.hero.button{
+.hero-button{
     width: 200px;
     height: 50px;
     margin-top: 30px;
-    margin-bottom: 200px;
     
 
     background-color: var(--hover-color);
@@ -256,19 +258,22 @@ ul{
     line-height: 1.2;
 } 
 .our-team-list p{
+    margin-top: 10px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+
 }
    /* footer */
-.footer-styles .conteiner{
+
+.footer-styles{
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.footer-styles{
     background-color: var(--footer-bcg-color);
 }
 .address-list{
+    margin-top: 20px;
     font-style: normal;
     font-weight:400;
     font-size: 14px;
@@ -281,6 +286,9 @@ ul{
 
 .address-list .link{
     color: rgba(255, 255, 255, 0.6);
+}
+.address-list li{
+    margin-top: 9px;
 }
 
 .address-list .link:hover{
@@ -325,7 +333,10 @@ ul{
     
 
     /* Services */
-   
+    .services{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
    
     .services h2{
         color: var(--titles-font-color);
@@ -342,10 +353,7 @@ ul{
         font-size: 16px;
         line-height: 1.8;
     }
-    .servces-list{
-        margin-top: 34px;
-    
-    }
+
     .buttons-list{
         display: flex;
         flex-direction: row;
@@ -374,8 +382,8 @@ ul{
     .services-list{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 34px;
-        margin-bottom: 94px;
+        margin-top: 50px;
+        margin-bottom: -30px;
 
         flex-direction: row;
     }
